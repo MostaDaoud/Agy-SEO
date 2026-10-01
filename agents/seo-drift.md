@@ -68,12 +68,12 @@ Use drift baselines to prove commercial progress, not just detect regressions:
 
 **Leading before/after (use after every publish/refresh):**
 - Baselines for money URLs: `drift_baseline.py` before publish → compare at 7/30/90d via `drift_compare.py`
-- Track leading ladder separately: rankings on commercial phrases → CTR → duration → onward clicks to pricing/demo (from `seo-google` GSC/GA4). Drift status is not the KPI — movement in those four is.
-- Surface instant wins immediately (screenshot #1, snippet, booked call) — don't wait for monthly drift report. Politics: programs get cancelled in the gap.
+- Track leading ladder separately: rankings on commercial phrases → CTR → duration → onward clicks to pricing/demo (from `seo-google` GSC/GA4). Drift status is not the KPI  -  movement in those four is.
+- Surface instant wins immediately (screenshot #1, snippet, booked call)  -  don't wait for monthly drift report. Politics: programs get cancelled in the gap.
 
 **Scope guard:** Scope drift monitoring to money pages only (30-40 high-intent URLs). Watching drift on informational `what is` pages is vanity.
 
-**Attribution cross-check:** Pair every drift compare with `how heard / why` form + CRM `which tool/what typed` log — drift alone cannot show AI attribution.
+**Attribution cross-check:** Pair every drift compare with `how heard / why` form + CRM `which tool/what typed` log  -  drift alone cannot show AI attribution.
 
 ## Audit Persistence
 

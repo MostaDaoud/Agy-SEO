@@ -58,7 +58,7 @@ job. `templated_metadata` is a high-severity finding; `description_echoes_title`
 
 *These percentages are this skill's internal scoring model, not Google's. Google publishes no numeric E-E-A-T weights, it states only that "trust is most important."*
 
-## Content Minimums — Floor Not Target
+## Content Minimums  -  Floor Not Target
 
 | Page Type | Min Words |
 |-----------|-----------|
@@ -68,17 +68,17 @@ job. `templated_metadata` is a high-severity finding; `description_echoes_title`
 | Product page | 300+ (400+ for complex products) |
 | Location page | 500-600 |
 
-> **Note:** These are topical coverage floors, not targets. Google confirms word count is NOT a direct ranking factor. The goal is comprehensive topical coverage. Use top 3 word count as **floor**, then **decisively exceed** — if leader lists 10 tools, list 15-20 so you aren't rebuilding in six months. Differentiator is customer research depth (pains/objections/proof they miss), not length alone.
+> **Note:** These are topical coverage floors, not targets. Google confirms word count is NOT a direct ranking factor. The goal is comprehensive topical coverage. Use top 3 word count as **floor**, then **decisively exceed**  -  if leader lists 10 tools, list 15-20 so you aren't rebuilding in six months. Differentiator is customer research depth (pains/objections/proof they miss), not length alone.
 
 **Blow-out + intent:** If SERP mixes landing + article + video, publish all to own 3 slots. Flag staleness as opening (archived course, last updated years ago, thin media despite high DR).
 
-**Presentation resolves length tension:** Long page must be skimmable — short paragraphs, real subheads, visuals, embedded walkthrough/video, table of contents, sticky CTA. Length doesn't kill conversion, wall-of-text does (visitor doesn't see their situation and bounces in seconds). Score presentation separately; wall-of-text = High.
+**Presentation resolves length tension:** Long page must be skimmable  -  short paragraphs, real subheads, visuals, embedded walkthrough/video, table of contents, sticky CTA. Length doesn't kill conversion, wall-of-text does (visitor doesn't see their situation and bounces in seconds). Score presentation separately; wall-of-text = High.
 
-**Stage not page:** Same URL can serve low-intent visitor on high-intent page (e.g., testing discount code) — don't map page rigidly to funnel. Score flexibility.
+**Stage not page:** Same URL can serve low-intent visitor on high-intent page (e.g., testing discount code)  -  don't map page rigidly to funnel. Score flexibility.
 
-**Ship when good, not perfect:** Cannot rank or accumulate signals until it exists — clear good-enough baseline then improve after indexing. Large-org months to publish vs 2-3/week shipping is structural advantage; flag perfectionism delay as Medium.
+**Ship when good, not perfect:** Cannot rank or accumulate signals until it exists  -  clear good-enough baseline then improve after indexing. Large-org months to publish vs 2-3/week shipping is structural advantage; flag perfectionism delay as Medium.
 
-**AI Overview wipeout filter:** Top-funnel `what is a KPI / what is CRM / how to build a website` gets instant AI Overview above the fold and zero commercial intent — deprioritize, file to backlog. Head terms like `best proposal software` are long-term projects; pipeline comes from long-tail underneath.
+**AI Overview wipeout filter:** Top-funnel `what is a KPI / what is CRM / how to build a website` gets instant AI Overview above the fold and zero commercial intent  -  deprioritize, file to backlog. Head terms like `best proposal software` are long-term projects; pipeline comes from long-tail underneath.
 
 ## AI Content Assessment (QRG, current version September 11, 2025)
 

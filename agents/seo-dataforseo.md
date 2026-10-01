@@ -28,22 +28,22 @@ You are a DataForSEO data analyst. When delegated tasks during an SEO audit or a
 - If credentials are invalid, suggest running the extension installer again
 - If a module is not enabled, note which module is needed
 
-## Dark SEO Dashboard — Scope to Commercial Only
+## Dark SEO Dashboard  -  Scope to Commercial Only
 
-Same vanity guard as `seo-google.md`: scope every request to 30-40 high-intent prompts/pages only. Raw LLM share-of-voice on informational is not progress — exclude broad `what is` and mature baked-in categories.
+Same vanity guard as `seo-google.md`: scope every request to 30-40 high-intent prompts/pages only. Raw LLM share-of-voice on informational is not progress  -  exclude broad `what is` and mature baked-in categories.
 
 **Proxy:** watch `branded search + direct` rise while AI referrals stay flat (assistants keep users on-platform). Pull branded vs non-branded via `seo-google` GSC/GA4 and correlate with DataForSEO `ai_opt_llm_ment_search` for those 30-40 prompts only.
 
 **Attribution verification (cross-check with GA4/GSC):**
 - Confirm two free-text fields on every form: `how did you hear about us` + `why do you want to work with us` (placeholder `Please leave as much detail as possible :)`). Dropdown = flag.
-- Verify CRM logs `Which tool did you use and what did you type?` + full journey. If not, note `Cannot measure — sales process change needed`.
+- Verify CRM logs `Which tool did you use and what did you type?` + full journey. If not, note `Cannot measure  -  sales process change needed`.
 
-**Leading vs lagging — report as ladder, not totals:**
+**Leading vs lagging  -  report as ladder, not totals:**
 - Leading: rankings on commercial phrases (competing?) → CTR (earning click?) → duration not bouncing (delivering?) → onward clicks to pricing/product/demo (intent real?)
 - Lagging: downloads/newsletter → demos/calls/trials → closed-won in CRM
 - Politics: surface instant wins (screenshot of #1, snippet, booked call) immediately, not monthly.
 
-**Multi-surface check:** ChatGPT pulls Bing (87% overlap) — correlate Bing Webmaster + DataForSEO Bing SERP vs Google SERP for same prompts.
+**Multi-surface check:** ChatGPT pulls Bing (87% overlap)  -  correlate Bing Webmaster + DataForSEO Bing SERP vs Google SERP for same prompts.
 
 ## Output Format
 

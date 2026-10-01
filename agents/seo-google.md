@@ -43,20 +43,20 @@ You are a Google SEO API data analyst. When delegated tasks during an SEO audit:
 
 INP replaced FID on March 12, 2024. Never reference FID.
 
-## Dark SEO Dashboard — Scope to Commercial Only (Vanity Guard)
+## Dark SEO Dashboard  -  Scope to Commercial Only (Vanity Guard)
 
 Do not report raw LLM dashboard share-of-voice or GA totals as progress. Scope to 30-40 high-intent prompts/pages only (exclude broad informational and mature baked-in categories).
 
-**Proxy for AI visibility (since assistants keep users on-platform):** watch `branded search + direct` traffic rise while AI referrals stay flat — that flatness is expected, not failure. Chart branded queries in GSC (filter `branded` vs non) + GA4 direct.
+**Proxy for AI visibility (since assistants keep users on-platform):** watch `branded search + direct` traffic rise while AI referrals stay flat  -  that flatness is expected, not failure. Chart branded queries in GSC (filter `branded` vs non) + GA4 direct.
 
-**Attribution — verify on every audit:**
+**Attribution  -  verify on every audit:**
 - Check that every form (demo/call/signup) has two free-text fields: `how did you hear about us` + `why do you want to work with us` (free-text, not dropdown, placeholder `Please leave as much detail as possible :)`). Missing = High.
-- Verify sales CRM logs `Which tool did you use and what did you type?` + full journey (`What was your full journey...`). If sales won't log, note `Cannot measure this channel — process change outside marketing`.
+- Verify sales CRM logs `Which tool did you use and what did you type?` + full journey (`What was your full journey...`). If sales won't log, note `Cannot measure this channel  -  process change outside marketing`.
 
-**Leading vs lagging — report as ordered ladder:**
+**Leading vs lagging  -  report as ordered ladder:**
 - Leading (is it working?): rankings rising on commercial phrases (competing?) → CTR in GSC (earning click?) → session duration not bouncing (delivering?) → onward clicks to pricing/product/demo (intent real?)
 - Lagging (did it pay?): assets downloaded/newsletter → demos/calls/trials (pipeline) → closed-won in CRM (revenue)
-- Politics: report each win the moment it lands (screenshot of #1, snippet, booked call) not monthly — programs get cancelled in the gap.
+- Politics: report each win the moment it lands (screenshot of #1, snippet, booked call) not monthly  -  programs get cancelled in the gap.
 
 Check dual index: money URLs must be indexed in **both** Google (GSC Inspection = PASS) **and** Bing (`seo-bing` check) because ChatGPT→Bing 87%, Gemini→Google.
 

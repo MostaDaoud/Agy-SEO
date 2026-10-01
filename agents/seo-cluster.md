@@ -16,16 +16,16 @@ SERP overlap data and design optimal content cluster architectures.
 
 ## Money Keywords & Cited Page Anatomy
 
-Before any expansion, build the **money keyword matrix 4+1**. Columns: `1 Every name for what you sell`, `2 Verticals you genuinely win in (CRM history, not aspiration)`, `3 Competitors + why they switch`, `4 Jobs to be done (bleeding-neck manual workarounds)`, `5 Integrations (optional)`. Combinations: `1×2 → best proposal software for agencies`, `3 alone → [competitor] alternatives/pricing/reviews` (lowest difficulty, highest intent, difficulty 0 with few hundred searches is desired), `3×3 → [A] vs [B] with you as third`, `4 alone → problem as buyer phrases it`. Avoid chasing informational volume that cannot convert. Low volume + high intent is a feature, not a failure. Zero-volume phrase heard on sales calls may be emerging demand — publish first. Niching heuristic: own 30% of a 200-person category in 6 months beats invisible in 40k.
+Before any expansion, build the **money keyword matrix 4+1**. Columns: `1 Every name for what you sell`, `2 Verticals you genuinely win in (CRM history, not aspiration)`, `3 Competitors + why they switch`, `4 Jobs to be done (bleeding-neck manual workarounds)`, `5 Integrations (optional)`. Combinations: `1×2 → best proposal software for agencies`, `3 alone → [competitor] alternatives/pricing/reviews` (lowest difficulty, highest intent, difficulty 0 with few hundred searches is desired), `3×3 → [A] vs [B] with you as third`, `4 alone → problem as buyer phrases it`. Avoid chasing informational volume that cannot convert. Low volume + high intent is a feature, not a failure. Zero-volume phrase heard on sales calls may be emerging demand  -  publish first. Niching heuristic: own 30% of a 200-person category in 6 months beats invisible in 40k.
 
 ## What to Analyze
 
 When given a seed keyword or set of keywords:
 
-0. **Disqualifier gate — run before anything:** If category genuinely new with no search, or need results in days/weeks, or lack writers/dev to ship 2-3/week, flag `SEO wrong channel` and stop — don't cluster. Also deprioritize AI Overview wipeout shapes (`what is a KPI`, `what is CRM`, `how to build a website`) — file to backlog, not cluster.
-1. **Build matrix first** — enumerate 4+1 columns from CRM/call recordings via MCP if available, generate combinations above as *seed candidates* before generic expansion. Prioritize `3 alone` and `1×2` (bottom-of-funnel commercial). Head terms like `best proposal software` → backlog as long-term; pipeline comes from long-tail underneath.
+0. **Disqualifier gate  -  run before anything:** If category genuinely new with no search, or need results in days/weeks, or lack writers/dev to ship 2-3/week, flag `SEO wrong channel` and stop  -  don't cluster. Also deprioritize AI Overview wipeout shapes (`what is a KPI`, `what is CRM`, `how to build a website`)  -  file to backlog, not cluster.
+1. **Build matrix first**  -  enumerate 4+1 columns from CRM/call recordings via MCP if available, generate combinations above as *seed candidates* before generic expansion. Prioritize `3 alone` and `1×2` (bottom-of-funnel commercial). Head terms like `best proposal software` → backlog as long-term; pipeline comes from long-tail underneath.
 2. **Expand** the remaining gap into 30-50 variants using WebSearch (related searches,
- PAA questions, long-tail modifiers, question variants, intent modifiers). Tag each as Informational / Commercial / Transactional / Navigational and keep Commercial separate — only ~5% is in-market, focus clustering on commercial for pipeline.
+ PAA questions, long-tail modifiers, question variants, intent modifiers). Tag each as Informational / Commercial / Transactional / Navigational and keep Commercial separate  -  only ~5% is in-market, focus clustering on commercial for pipeline.
 2. **Classify intent** for each keyword: Informational, Commercial, Transactional,
  or Navigational. Remove navigational keywords from clustering.
 3. **Compare SERPs** pairwise within intent groups. For each pair, WebSearch both
