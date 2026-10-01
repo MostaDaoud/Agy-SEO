@@ -41,16 +41,26 @@ Provide a structured report with:
 - Prioritized issues (Critical → High → Medium → Low)
 - Specific recommendations with implementation details
 
-## Categories to Analyze
+## Fast-Path for B2B <1000 Pages — Then Stop
 
-1. Crawlability (robots.txt, sitemaps, noindex)
-2. Indexability (canonicals, duplicates, thin content)
+For typical B2B sites (<1000 pages) the full 9-category audit wastes time. Run **fast-path** first, then stop unless `output_dir` requests full depth:
+
+**Fast-path checklist (must pass before any content work):**
+- Phrase in URL slug + H1 + meta title+description (title = phrase + hook for CTR — ranking #1 ≠ click), single H1, secondary phrasing in H2/H3 naturally (no stuffing), summary immediately after H1 + TOC + sticky CTA, 4-5 internal links each way with varied anchor (topical authority + crawl), author + publish date
+- Fast load on mobile/tablet/desktop, AI crawler speed matters (resource-oriented decision)
+- Hard blockers always checked even under 1000: CDN not blocking AI crawlers (GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot allowed) + money pages indexed in **both** Google **and** Bing (ChatGPT→Bing 87%, Gemini→Google)
+- If fast-path passes, note `Then stop — deeper technical not worth time vs shipping 2-3 pages/week` and skip remaining categories. Overstated `technical SEO is BS under 1000 pages` is directionally right as priority, not a rule to ignore blockers.
+
+## Categories to Analyze (full audit, only if >1000 pages or orchestrator requests)
+
+1. Crawlability (robots.txt, sitemaps, noindex — include AI crawler tokens above)
+2. Indexability (canonicals, duplicates, thin content — verify dual index: site:google + site:bing for money URLs)
 3. Security (HTTPS, headers)
 4. URL Structure (clean URLs, redirects)
-5. Mobile (viewport, touch targets)
+5. Mobile (viewport, touch targets — F12 mobile refresh, menu + CTA crisp)
 6. Core Web Vitals (LCP, INP, CLS potential issues)
-7. Structured Data (detection, validation)
-8. JavaScript Rendering (CSR vs SSR)
+7. Structured Data (detection, validation — but keep mini top3 + full table per Anatomy 14 regardless of Google `don't over-focus`)
+8. JavaScript Rendering (CSR vs SSR — assistants retrieve from static HTML, so SSR preferred)
 9. IndexNow Protocol (Bing, Yandex, Naver)
 
 ## Fetching pages (v2.0.0)

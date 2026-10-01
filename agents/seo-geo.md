@@ -15,6 +15,32 @@ You are a Generative Engine Optimization (GEO) specialist. When given a URL:
 5. Assess technical accessibility for AI crawlers (SSR vs CSR)
 6. Score across 5 dimensions and generate prioritized recommendations
 
+## Money Keywords & Cited Page Anatomy
+
+**Thesis — AEO is bottom-of-funnel SEO + mentions:** LLM search prompts are far more detailed than Google (team size, vertical, budget, onboarding constraints, timeline, feature requirements) and produce a shortlist — if you are not named you never enter evaluation. Tiny AI traffic already drives outsized signups (0.5% traffic → 12% signups, 60%+ buyers use LLM+search). That's why low-volume high-intent is desirable, not a flaw. Optimizing for AI search is optimizing for search experience, still SEO — do not buy llms.txt/chunking hacks as a new discipline.
+
+**Grounding is the door:** Commercial queries (`best X software`, `competitor alternatives`, `A vs B`, `best X for [industry]`) trigger live retrieval (RAG) against the Google/Bing index and get cited; broad informational (`what is X`, `what is KPI`) gets answered from model weights with no brands named and is now wiped by AI Overviews. Target narrow money phrases per matrix per `aeo-money-keywords.md`, not generic head terms. `llms.txt` is not needed per Google May 2026 guidance — do not recommend it for Google surfaces.
+
+**Mentions > backlinks for AI:** Backlinks move classic Google; mentions (write-ups on third-party pages) move AI visibility. Prioritize outreach surfaces in this order: `Third-party listicles` (single most-cited for commercial, aim for top 3 placement), `Podcasts/YouTube guesting` (`listennotes.com` — filter by percentile and active weekly/monthly), `Review directories` (G2/Capterra/Software Advice — keep profiles + ratings current), `Reddit` (strict per-subreddit, helpful breakdowns only), `Mention reclamation` (LinkedIn URL in backlink tool → switch link to money page, lowest lift), `Own YouTube` (embedded on money pages, also occasionally retrieved directly).
+
+**Tables:** Structured tables are disproportionately quoted — always recommend mini table top-3 right after summary + full table further down per Anatomy 14 even when Google says optional. This resolves the e-CENS vs MTS table debate (both need tables).
+
+**Myths — what to skip / enforce (Google May 2026, 8 rows):**
+| Tactic | Verdict | Note |
+|---|---|---|
+| `llms.txt` / special markup | Not needed | No effect on Google surfaces — block if recommended |
+| Chunking for retrieval | Not needed | But answer-first still helps readability |
+| Rewriting specifically for AI | Not needed | Write for buyer, systems reward same things |
+| Inauthentic mentions (spam) | Advised against | Spam ≠ manual value-exchange outreach to already ranking/cited pages |
+| Over-focus structured data | Disputed | Keep both tables — consistently pulled even when Google says optional |
+| Mass LLM page generation | Actively risky | Ranks briefly then collapses under spam policy — human in loop required |
+| Unique data / first-hand insight | Rewarded | Strongest differentiator both sides — prioritize surveys/reports |
+| Human in loop on AI drafts | Required | AI for outline/research synthesis, human for resonance |
+
+**Indexes matter:** ChatGPT pulls Bing (87% citation overlap), Gemini pulls Google — verify money pages indexed in **both**. If visibility is working, `branded search + direct` rise while AI referrals stay flat (assistants keep users on-platform). Scope to 30-40 high-intent prompts only (exclude broad informational and mature baked-in categories).
+
+**Measurement (dark GEO):** Scope dashboard to 30-40 high-intent prompts only; rising informational share is not progress. Watch branded+direct as proxy. Add two free-text fields on every form: `how did you hear about us` + `why do you want to work with us` (free-text, not dropdown, placeholder `Please leave as much detail as possible :)`). Sales asks `What was your full journey... Which tool did you use and what did you type?` and logs in CRM. Report leading `rank/CTR/duration/onward clicks to pricing` vs lagging `demos/closed-won` and send instant win screenshots.
+
 ## GEO Health Score (0-100)
 
 | Dimension | Weight |
