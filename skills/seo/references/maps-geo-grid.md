@@ -152,3 +152,22 @@ Geo-Grid Scan Estimate:
   Estimated cost: $0.09 (standard) - $0.29 (live)
   Proceed? [DataForSEO credits will be consumed]
 ```
+
+---
+
+## Queue Modes and Cost Tiering
+
+DataForSEO Google Maps SERP calls support three execution modes:
+
+- **Live:** ~$0.020/point (instant response in ~6 seconds). Best for interactive audits.
+- **Priority Queue:** ~$0.012/point (40% discount, results ready in ~1 minute).
+- **Standard Queue:** ~$0.006/point (70% discount, background batch processing).
+
+For a 7x7 grid (49 points), standard queue drops cost from $0.98 to $0.29.
+
+---
+
+## DataForSEO Labs Location Safeguard
+
+DataForSEO Labs and AI Optimization endpoints (LLM mentions, keyword overview, search intent) only accept country-level targeting (94 supported country ISO codes). Passing city or region strings causes API validation failure. SERP and Maps endpoints support full city and coordinate precision.
+

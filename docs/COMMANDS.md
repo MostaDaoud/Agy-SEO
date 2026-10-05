@@ -370,12 +370,14 @@ Maps intelligence: geo-grid rank tracking, GBP profile audits, review intelligen
 /seo maps competitors "auto repair" "denver"
 /seo maps nap "Joe's Coffee" "austin tx"
 /seo maps schema "Joe's Coffee" "austin tx"
+/seo maps rating-goal 4.6 82
 ```
 
 **Capabilities:**
 - Rank tracking on a geographic grid (typically 49 points)
 - GBP profile audit with completeness scoring
 - Review aggregation across Google, Yelp, Facebook, Bing
+- 5-star review goal calculation accounting for Google's .x5 round-down display threshold
 - Competitor discovery within a configurable radius
 
 ---

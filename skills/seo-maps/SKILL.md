@@ -41,6 +41,7 @@ website-level checks.
 | `/seo maps nap <business-name>` | Cross-platform NAP verification | 0+ |
 | `/seo maps schema <business-name>` | Generate LocalBusiness JSON-LD from data | 0+ |
 | `/seo maps gbp <business> <location>` | GBP completeness audit | 1+ |
+| `/seo maps rating-goal <rating> <reviews>` | Calculate 5-star reviews needed for target ratings | 0+ |
 
 ---
 
@@ -162,6 +163,16 @@ Flag reviews matching 2+ of these patterns:
 - Exclusively 5-star velocity spike (vs historical baseline)
 - Identical or near-identical text across reviews
 - Sudden volume spike without corresponding marketing activity
+
+### Rating Goal Calculator (Tier 0+)
+
+Google displays average ratings rounded to one decimal place, rounding the .x5 boundary downward (4.75 displays as 4.7, 4.76 displays as 4.8). To display target rating T, the true average only needs to cross the lower threshold (T - 0.05).
+
+Run the bundled calculator:
+```bash
+"${CLAUDE_PLUGIN_ROOT}/scripts/claude-seo" run rating_goal.py --rating <avg_rating> --reviews <review_count>
+```
+Pass `--target <rating>` to calculate for a specific milestone or `--json` for structured output.
 
 ---
 
