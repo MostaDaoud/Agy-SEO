@@ -31,6 +31,30 @@ metadata:
 
 ---
 
+## Core Operating Ethos & Evidence Labels
+
+Local SEO is not a collection of hacks. The durable standard is:
+**Make it true. Make it complete. Make it useful. Make it trusted. Measure what customers do.**
+
+Every audit recommendation must carry an evidence label:
+- `[Confirmed Platform Guidance]`: Official platform rule (Google, Apple, Microsoft) or regulation (FTC)
+- `[Practitioner Interpretation]`: Empirical findings (Whitespark, Sterling Sky, BrightLocal) serving as working heuristics
+- `[Unverified Folklore]`: Debunked or unsupported tactics (geotagged photos, keyword stuffing names, fixed 100 citations)
+
+---
+
+## Gate 0: Eligibility & Representation Check
+
+Policy comes before optimization. If a business profile violates eligibility rules, no amount of citation building or content will fix it.
+
+- **Storefront**: Must have real-world operations during stated hours with permanent fixed signage visible to visiting customers. Rented mailboxes and unstaffed virtual offices are strictly ineligible.
+- **Service Area Business (SAB)**: If staff travel to customers and no customers visit the operating base, the street address must be hidden. Exposing a private home address violates policy.
+- **Age-Restricted Products/Services**: Under Google's stated policy, businesses associated with age-restricted goods (alcohol, cannabis, weapons) cannot operate as service-area businesses without a physical storefront.
+- **Ineligible Models**: Online-only businesses and lead-generation companies/agents are ineligible for a Google Business Profile.
+- **Single Profile Principle**: One profile per distinct operating location. Duplicate profiles split reviews, confuse searchers, and risk suspension.
+
+---
+
 ## Business Type Detection
 
 Detect from page signals before analysis. This determines which checks apply.
@@ -80,10 +104,12 @@ Primary category is the **single most important local pack factor** (Whitespark 
 
 **Check for:**
 - GBP embed or reference detectable on page (Maps iframe, place ID, reviews widget)
+- Permanent fixed signage at physical address (Confirmed: mandatory for address-showing storefronts; unstaffed locations or mailboxes risk suspension)
+- Real-world business name adherence (Confirmed: no added city/service keywords)
 - Primary category appropriateness (infer from page content vs visible GBP data)
 - Evidence of secondary categories (optimal: 4 additional per BrightLocal)
 - GBP posts presence (no direct ranking impact per WebFX, but triggers Post Justifications)
-- Photos/video evidence (45% more direction requests with photos, Agency Jet)
+- Photos/video evidence (45% more direction requests with photos, Agency Jet; geotagging has zero impact)
 - Q&A content: Google discontinued its Q&A API on 2025-11-03 and public Q&A is reportedly being phased out; answer common questions on the website and in the business description instead, and treat any remaining public Q&A as a bonus
 - Google Verified badge eligibility (replaced Guaranteed/Screened in Oct 2025)
 - GBP link URL strategy: do NOT link to strongest website page (Sterling Sky Diversity Update -- risks suppressing organic rankings)
@@ -102,10 +128,11 @@ Review velocity matters more than total count. In Sterling Sky's 2025 study of 8
 - Total Google review count visible on page or schema (magic threshold: 10, Sterling Sky)
 - Star rating (31% of consumers only use 4.5+, 68% only use 4+, BrightLocal 2026)
 - Review recency indicators (74% only care about reviews in last 3 months)
-- `aggregateRating` in schema (ratingValue, reviewCount, bestRating)
-- Third-party review presence (consumers use average of 6 review sites, BrightLocal 2026)
-- Owner response patterns (88% would use business that responds, BrightLocal)
+- Zero-incentive review compliance: Google strictly prohibits offering payment, discounts, gift cards, contests, or free services for reviews (Confirmed: Maps policy is stricter than FTC rules)
 - Review gating detection: any pre-screening of satisfaction before directing to review platform is prohibited by Google (fake engagement policy) and FTC ($53,088/violation)
+- `aggregateRating` in schema (ratingValue, reviewCount, bestRating; note self-controlled reviews are ineligible for Google star snippets)
+- Third-party review presence (consumers use average of 6 review sites, BrightLocal 2026)
+- Owner response quality: respond helpfully for customer care, not keyword stuffing (not a ranking factor); protect patient privacy under HIPAA and client privilege in legal (88% would use business that responds, BrightLocal)
 
 **Industry-specific:**
 - Healthcare: HIPAA prohibits confirming/denying reviewer is a patient in responses
@@ -159,8 +186,8 @@ Citations declining for traditional pack rankings but **3 of top 5 AI visibility
   - Yelp: `site:yelp.com "Business Name"`
   - BBB: `site:bbb.org "Business Name"`
   - Facebook business page references
-- **Apple Maps / Apple business listings** awareness: claim and maintain Apple listings; treat Apple Business unified-platform launch/rename claims as TechRadar-sourced and verify against Apple primary before asserting.
-- Bing Places awareness (powers ChatGPT, Copilot, Alexa -- recommend claiming and optimizing)
+- **Apple Business** (formerly Apple Business Connect): claim and maintain Apple listings; Apple unified its business platform in April 2026. Powers Siri, Apple Maps, and iOS discovery.
+- Bing Places for Business: overhauled portal launched Oct 2025. Powers ChatGPT, Copilot, Alexa -- recommend claiming and optimizing.
 - Industry-specific directory recommendations: load `../seo/references/local-schema-types.md` for per-vertical citation sources
 - Data aggregator awareness: Data Axle, Foursquare, Neustar/TransUnion (recommend submission for downstream distribution)
 - Regional Search units: in the EEA, Google's aggregator and supplier units also cover local business queries since 2026-09-18; Türkiye has separate places-site features (see `seo-hreflang` section 5c); note this for businesses serving those markets
@@ -178,6 +205,8 @@ Schema is NOT a direct ranking factor (John Mueller confirmed). But enables rich
 - LocalBusiness schema presence (extract JSON-LD blocks)
 - Required properties: `name`, `address` with PostalAddress sub-properties
 - Recommended properties: `geo` (minimum 5 decimal places, Confirmed), `openingHoursSpecification`, `telephone`, `url`, `priceRange` (<100 chars), `image`, `aggregateRating`
+- Review snippet restriction: self-controlled reviews for LocalBusiness and Organization are ineligible for Google review star rich results; do NOT add aggregateRating merely to chase stars (Confirmed)
+- Address parity for SABs: if an SAB hides its street address from public customers, do NOT leak a private home address in JSON-LD streetAddress just to satisfy rich result validators (Confirmed)
 - **Correct subtype for industry** -- load `../seo/references/local-schema-types.md`:
   - Restaurant using `Restaurant` not generic `LocalBusiness`
   - Legal using `LegalService` not deprecated `Attorney`
@@ -236,9 +265,18 @@ Key local AI facts:
 
 ---
 
+## 30-60-90 Day Operating Plan
+
+- **Days 1 to 30 (Custody, Eligibility & Truth)**: Verify business model eligibility (Gate 0); audit ownership custody; establish 11-field source of truth; correct material NAP/hours errors; set up clean UTM tracking and baseline analytics.
+- **Days 31 to 60 (Usefulness & Feedback)**: Improve highest-value service/location pages; run city-name swap test; launch compliant zero-incentive review workflow; establish privacy-safe review response playbook; claim/refresh Apple Business and Bing Places.
+- **Days 61 to 90 (Authority & Operating Cadence)**: Pursue 1-2 offline-relevant local authority initiatives (chambers, local sponsorships); validate LocalBusiness schema with visible data parity; establish monthly facts, reviews, and UTM performance review.
+
+---
+
 ## Reference Files
 
 Load on-demand as needed:
+- `../seo/references/local-evidence-policy.md`: Evidence standards, controllability matrix, 11-field source of truth, review compliance rules, and 11 myths debunked
 - `../seo/references/local-seo-signals.md`: Ranking factors, review benchmarks, citation tiers, GBP feature status, algorithm updates
 - `../seo/references/local-search-behavior.md`: Voice search, AI search impact on local, Local Pack structure, proximity
 - `../seo/references/local-schema-types.md`: LocalBusiness subtypes by industry, schema patterns, citation sources per vertical

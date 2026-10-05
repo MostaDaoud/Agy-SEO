@@ -207,6 +207,7 @@ Load these on-demand as needed (do NOT load all at startup):
 - `references/local-search-behavior.md`: Voice, AI search impact on local, Local Pack structure, proximity
 - `references/local-schema-types.md`: LocalBusiness subtypes, industry-specific schema and citation sources
 - `references/local-schema-multilocation.md`: Multi-location schema pattern, deprecated local schema
+- `references/local-evidence-policy.md`: Local evidence standards, controllability matrix, source of truth, and review rules
 
 Maps-specific references (loaded by seo-maps skill, not at startup):
 - `references/maps-geo-grid.md`, `references/maps-gbp-checklist.md`, `references/maps-api-endpoints.md`, `references/maps-free-apis.md`
