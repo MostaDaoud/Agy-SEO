@@ -13,7 +13,7 @@ license: MIT
 compatibility: "Requires OpenSEO MCP server (https://app.openseo.so/mcp)"
 metadata:
   author: MostafaDaoud
-  version: "2.4.1"
+  version: "2.4.2"
   category: seo
 ---
 
