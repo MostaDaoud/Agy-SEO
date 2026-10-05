@@ -754,6 +754,35 @@ Multi-page Lighthouse audit via Unlighthouse (extension, MIT, no API quota). **P
 
 ---
 
+### `/seo openseo [command]`
+
+Live search, keyword, backlink, and AI citation data via OpenSEO MCP (extension). **Prerequisites:** OpenSEO extension installed (`./extensions/openseo/install.sh` or `.\extensions\openseo\install.ps1`).
+
+```
+/seo openseo keywords <query>         # Search volume, KD, CPC, intent classification
+/seo openseo serp <query>             # Live SERP capture and ranking breakdown
+/seo openseo competitors <domain>     # Organic footprint and competitor gap analysis
+/seo openseo backlinks <target>       # Backlink profile and referring domain metrics
+/seo openseo audit <url>              # Live technical and on-page crawl diagnostics
+/seo openseo ai-visibility <brand>    # AI Overviews citation tracking
+```
+
+---
+
+### `/seo plan-gate [command]`
+
+Plan-first execution gate for technical SEO, scripting, and code automation (extension). Enforces a read-only exploration pass (Read, Grep, Glob) before releasing execution to a separate executor. **Prerequisites:** Plan Gate extension installed (`./extensions/plan-gate/install.sh` or `.\extensions\plan-gate\install.ps1`).
+
+```
+/seo plan-gate <task>                 # Run full loop: plan, review, execute, verify
+/seo plan-gate claude                 # Run Lane A: read-only seo-plan-gate-planner subagent
+/seo plan-gate codex                  # Run Lane B: read-only plan pass then resume with --write
+/seo plan-gate preflight              # Verify Lane B environment preconditions
+/seo plan-gate audit                  # Verify Lane A tool allowlist enforcement
+```
+
+---
+
 ## Quick Reference
 
 | Command | Use Case |
@@ -783,6 +812,8 @@ Multi-page Lighthouse audit via Unlighthouse (extension, MIT, no API quota). **P
 | `/seo flow [stage] [url\|topic]` | FLOW framework prompts |
 | `/seo google [command] [url]` | Google SEO APIs (GSC, PSI, CrUX, GA4) |
 | `/seo dataforseo [command]` | Live SEO data (extension) |
+| `/seo openseo [command]` | Live SEO & SERP intelligence via OpenSEO MCP (extension) |
+| `/seo plan-gate <task>` | Plan-first execution gate for technical SEO and automation (extension) |
 | `/seo image-gen [use-case] <desc>` | AI image generation (extension) |
 | `/seo firecrawl [command] <url>` | Full-site crawling (extension) |
 | `/seo ahrefs [command] <url>` | Backlinks, organic keywords, and content data via the official Ahrefs MCP (extension) |

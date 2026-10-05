@@ -35,7 +35,6 @@ metadata:
    - `seo-sxo` -- Search experience analysis: page-type mismatch, user stories, persona scoring (always include in full audits)
    - `seo-drift` -- Drift analysis: compare against stored baseline (spawn when drift baseline exists for the URL via `"${CLAUDE_PLUGIN_ROOT}/scripts/claude-seo" run drift_history.py <url>`)
    - `seo-ecommerce` -- Product schema, marketplace intelligence (spawn when E-commerce industry detected)
-   - `seo-openseo` -- Live keyword metrics, SERP rankings, competitor gap, backlink health, AI Overviews citation tracking (spawn when OpenSEO MCP tools detected)
 5. **Score** -- aggregate into SEO Health Score (0-100)
 6. **Persist audit artifacts** -- write all outputs under `{domain}-audit/`
 7. **Report** -- generate prioritized action plan and optional PDF/HTML report
@@ -178,6 +177,10 @@ If Google API credentials are configured (`"${CLAUDE_PLUGIN_ROOT}/scripts/claude
 ## Matomo Integration (Optional)
 
 If Matomo credentials are configured (`"${CLAUDE_PLUGIN_ROOT}/scripts/claude-seo" run matomo_auth.py --check`), spawn the `seo-matomo` agent to enrich the audit with self-hosted analytics: organic visits trend, top landing pages, device and country breakdowns, channel / search-engine split, and organic keywords. Works as a GA4 alternative (when only Matomo is configured) or as a complement (when both GA4 and Matomo are present). Matomo numbers will not match GA4 exactly because of segmentation differences (`referrerType==search` vs `sessionDefaultChannelGroup == "Organic Search"`) and attribution-window rules.
+
+## OpenSEO Integration (Optional)
+
+If OpenSEO MCP tools are available, the extension enriches the audit with live keyword metrics, SERP rankings, competitor gap analysis, backlink health, and AI Overviews citation tracking.
 
 ## Google Update Correlation
 
