@@ -342,6 +342,17 @@ UCP itself is live; what's early is broad merchant adoption. Flag a literal
 
 ---
 
+## Shopify Technical SEO Auditing (Patryk Wawok's 14 Critical Traps)
+
+For Shopify stores, see `${CLAUDE_PLUGIN_ROOT}/skills/seo/references/ecommerce-shopify-14.md` covering the 14 critical technical SEO failure modes: collection-scoped product links, pagination loops (`?page=1`), tag filter crawl traps, client-rendered menus, schema vs Merchant Center price mismatches, and app bloat.
+
+Audit a Shopify store or collection page:
+```bash
+"${CLAUDE_PLUGIN_ROOT}/scripts/claude-seo" run shopify_lint.py https://store.example.com/collections/frontpage --threshold 80
+```
+
+---
+
 ## Error Handling
 
 | Error | Cause | Response |

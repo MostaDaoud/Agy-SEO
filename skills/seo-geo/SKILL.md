@@ -25,7 +25,9 @@ Google's official position, published under Search Central docs:
 Read `references/google-ai-optimization-guide.md` for the full synthesis,
 myth-busting list (`llms.txt`, chunking, AI-rephrasing, mention-farming,
 all rejected by Google as ineffective), and the Who/How/Why test for
-content quality.
+content quality. See `${CLAUDE_PLUGIN_ROOT}/skills/seo/references/geo-fanout-triples.md` for
+Everett Sizemore's Semantic Triples, 3-word definition anchors, 14 citable
+archetypes, and ChatGPT fan-out query architecture (audit via `"${CLAUDE_PLUGIN_ROOT}/scripts/claude-seo" run semantic_triples_lint.py`).
 
 Audits should frame GEO findings as **SEO fundamentals applied to AI-search
 surfaces**, not as a separate optimization discipline. When community

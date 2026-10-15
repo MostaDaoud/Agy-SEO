@@ -174,6 +174,7 @@ version changes, and the `CHECKED_ON` constant in `agentic_check.py` together.
 - `references/discovery-and-markdown.md`: llms.txt, Markdown delivery (tested
   nginx), ai-catalog.json, `/.well-known` documents, commerce pointers
 - `references/webmcp.md`: status, consumers, API, safe patterns
+- `${CLAUDE_PLUGIN_ROOT}/skills/seo/references/agentic-webmcp.md`: declarative forms, action schemas, and permissions policies (audit with `"${CLAUDE_PLUGIN_ROOT}/scripts/claude-seo" run webmcp_lint.py`)
 - `references/vendor-matrix.md`: dated, source-graded vendor facts and the
   refresh procedure
 

@@ -37,17 +37,18 @@ ALLOWED_CORE_SCRIPTS = frozenset(
         "dataforseo_normalize.py", "domain_history.py", "drift_baseline.py",
         "drift_compare.py", "drift_history.py", "drift_report.py", "fetch_page.py",
         "ga4_report.py", "gbp_deprecation_lint.py", "google_auth.py",
-        "google_report.py", "gsc_inspect.py", "gsc_query.py", "indexing_notify.py",
+        "google_report.py", "gsc_inspect.py", "gsc_query.py", "helpful_content_lint.py", "indexing_notify.py",
         "indexnow_submit.py", "iptc_ai_label.py", "keyword_planner.py",
         "keywordseverywhere_api.py",
         "lcp_subparts.py", "lighthouse_agentic.py", "matomo_auth.py", "matomo_report.py", "metadata_template.py",
         "moz_api.py", "nlp_analyze.py", "pagespeed_check.py",
         "parasite_risk.py", "parse_html.py", "preload_check.py", "rating_goal.py", "render_page.py",
-        "portability_check.py", "consistency_check.py",
-        "schema_ecommerce_validate.py", "schema_generate.py", "seo_updates.py",
+        "rendering_gap_lint.py", "portability_check.py", "consistency_check.py",
+        "schema_ecommerce_validate.py", "schema_generate.py", "semantic_triples_lint.py",
+        "seo_updates.py", "shopify_lint.py",
         "sitemap_discovery.py", "sync_flow.py", "ucp_check.py", "unlighthouse_run.py",
         "url_safety.py", "validate_backlink_report.py", "verify_backlinks.py",
-        "youtube_search.py",
+        "webmcp_lint.py", "youtube_search.py",
     }
 )
 REDACTIONS = (

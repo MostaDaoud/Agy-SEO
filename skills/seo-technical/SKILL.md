@@ -262,6 +262,15 @@ What it does and does not cover:
 
 `host:port` matches that port only; a bare `host` matches any port. With the variable unset the policy is unchanged. Never suggest setting it for a host the user does not control. See SECURITY.md.
 
+## Technical Rendering Gap Auditing (Raw HTML vs Rendered DOM)
+
+See `${CLAUDE_PLUGIN_ROOT}/skills/seo/references/technical-rendering-gaps.md` for the Koray Tugberk Gubur and Kunjal Chawhan framework evaluating differences between raw server HTML and rendered DOM (dynamic link omission, hydrated H1/H2 tags, client-only JSON-LD, and AI crawler rendering budgets).
+
+Run the automated rendering gap discrepancy linter:
+```bash
+"${CLAUDE_PLUGIN_ROOT}/scripts/claude-seo" run rendering_gap_lint.py https://example.com/page
+```
+
 ## Error Handling
 
 | Scenario | Action |

@@ -209,6 +209,13 @@ Load these on-demand as needed (do NOT load all at startup):
 - `references/local-schema-types.md`: LocalBusiness subtypes, industry-specific schema and citation sources
 - `references/local-schema-multilocation.md`: Multi-location schema pattern, deprecated local schema
 - `references/local-evidence-policy.md`: Local evidence standards, controllability matrix, source of truth, and review rules
+- `references/geo-fanout-triples.md`: Semantic Triples, 3-word definition anchors, 14 citable archetypes, ChatGPT fan-out
+- `references/content-32-guidelines.md`: Google 32 Helpful Content guidelines and anti-slop remediation
+- `references/ecommerce-shopify-14.md`: 14 critical Shopify technical traps, canonical loops, and schema-feed sync
+- `references/technical-rendering-gaps.md`: Raw HTML vs Rendered DOM discrepancy analysis and AI crawler budgets
+- `references/agentic-webmcp.md`: WebMCP declarative form attributes, action schemas, and permission policy
+- `references/backlinks-parasite-linkedin.md`: Parasite SEO, LinkedIn SERP ranking, and knowledge graph entity seeding
+- `references/local-gbp-stealth-edits.md`: GBP stealth edit detection, category drift, and review attribute justifications
 
 Maps-specific references (loaded by seo-maps skill, not at startup):
 - `references/maps-geo-grid.md`, `references/maps-gbp-checklist.md`, `references/maps-api-endpoints.md`, `references/maps-free-apis.md`

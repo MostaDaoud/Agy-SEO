@@ -90,7 +90,7 @@ claude-seo/
     seo-flow.md                  # FLOW framework integration
   hooks/                           # Quality gate hooks
     hooks.json                   # PostToolUse schema validation
-  scripts/                         # 61 Python execution scripts
+  scripts/                         # 66 Python execution scripts
     google_auth.py               # Credential management (OAuth, SA, API key, 4-tier detection)
     backlinks_auth.py            # Backlink API credential management (Moz, Bing)
     moz_api.py                   # Moz Link Explorer API (DA/PA, spam, domains, anchors)
@@ -152,6 +152,11 @@ claude-seo/
     verify_release.py            # Verify checkout integrity against a release manifest
     sitemap_discovery.py         # Sitemap discovery (robots.txt, common paths)
     runtime.py                   # Managed runtime behind the claude-seo launcher
+    helpful_content_lint.py      # Google 32 Helpful Content guidelines and anti-slop linter
+    semantic_triples_lint.py     # Semantic Triples, 3-word definition anchors, 14 citable archetypes
+    shopify_lint.py              # Patryk Wawok 14 critical Shopify technical traps linter
+    rendering_gap_lint.py        # Raw HTML vs Rendered DOM discrepancy detector
+    webmcp_lint.py               # WebMCP declarative forms and action schema auditor
   schema/                          # Schema.org JSON-LD templates
   extensions/                      # Optional add-on install helpers
     dataforseo/                  # DataForSEO MCP install scripts
