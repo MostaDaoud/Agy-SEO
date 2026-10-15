@@ -119,6 +119,7 @@ Allow: /
 - Redirects: no chains (max 1 hop), 301 for permanent moves
 - URL length: flag >100 characters
 - Trailing slashes: consistent usage
+- Migration Risk Guard (Sara Taher framework, see `${CLAUDE_PLUGIN_ROOT}/skills/seo/references/url-structure-blast-radius.md`): Google uses the hyperlink graph and internal navigation, not URL paths, to understand site architecture. Flat URLs are not a crawl bottleneck. Never recommend URL restructuring for live ranking URLs without formal migration risk assessment. Subfolders are critical primarily for penalty blast radius containment (e.g. Forbes Advisor folder isolation vs GeeksforGeeks sitewide penalty) and international routing.
 
 ### 5. Mobile Optimization & Page Experience
 - Responsive design: viewport meta tag, responsive CSS

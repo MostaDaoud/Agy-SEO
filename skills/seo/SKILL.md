@@ -216,6 +216,7 @@ Load these on-demand as needed (do NOT load all at startup):
 - `references/agentic-webmcp.md`: WebMCP declarative form attributes, action schemas, and permission policy
 - `references/backlinks-parasite-linkedin.md`: Parasite SEO, LinkedIn SERP ranking, and knowledge graph entity seeding
 - `references/local-gbp-stealth-edits.md`: GBP stealth edit detection, category drift, and review attribute justifications
+- `references/url-structure-blast-radius.md`: Sara Taher URL structure framework, flat URL realities, and penalty blast radius isolation
 
 Maps-specific references (loaded by seo-maps skill, not at startup):
 - `references/maps-geo-grid.md`, `references/maps-gbp-checklist.md`, `references/maps-api-endpoints.md`, `references/maps-free-apis.md`
