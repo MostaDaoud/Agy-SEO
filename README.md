@@ -1,39 +1,34 @@
 <!--
-  Claude SEO (claude-seo): free, open-source SEO audit plugin for Claude Code by Agrici Daniel.
-  Technical SEO, Core Web Vitals, E-E-A-T, Schema.org, AI search (GEO), local SEO, e-commerce and international SEO.
-  26 sub-skills and 19 specialist agents. MIT licensed.
+  Agy-SEO: an SEO and GEO audit suite for Claude Code, OpenCode and Codex.
+  Maintained by Mostafa Daoud. Forked from Claude SEO by Agrici Daniel (MIT).
+  26 sub-skills and 19 specialist agents for technical SEO, content, schema,
+  AI search (GEO), local, e-commerce and international SEO.
 -->
 
-<img src="assets/readme/v3/hero.svg" width="1200" height="420" alt="Claude SEO: rank in Google, get cited by AI. Three bots climb from #48 to #1 by fixing crawl, speed, schema, AI access and authority, then Google, ChatGPT, Perplexity, Gemini and Claude cite the site." />
+<img src="assets/readme/agy-hero.svg" width="1200" height="420" alt="Agy-SEO: SEO and GEO audits for Claude Code, OpenCode and Codex." />
 
-<h1 align="center">Claude SEO</h1>
+<h1 align="center">Agy-SEO</h1>
 
 <p align="center">
-  <b>Free, open-source SEO audits inside <a href="https://claude.com/product/claude-code">Claude Code</a>.</b><br />
-  Rank higher in Google and get cited by AI search.
+  <b>An SEO and GEO audit suite for Claude Code, OpenCode and Codex.</b><br />
+  Forked from <a href="https://github.com/AgriciDaniel/claude-seo">Claude SEO</a> by Agrici Daniel, maintained by <a href="https://github.com/MostaDaoud">Mostafa Daoud</a>.
 </p>
 
 <p align="center">
   <a href="#install">Install</a> ·
-  <a href="#see-it-in-action">Demo</a> ·
-  <a href="#real-results">Results</a> ·
-  <a href="#meet-the-team">Team</a> ·
+  <a href="#what-this-fork-adds">What this fork adds</a> ·
   <a href="#commands">Commands</a> ·
-  <a href="#pricing">Pricing</a> ·
   <a href="#faq">FAQ</a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/AgriciDaniel/claude-seo/actions/workflows/ci.yml"><img src="https://github.com/AgriciDaniel/claude-seo/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
   <a href="https://claude.com/product/claude-code"><img src="https://img.shields.io/badge/Claude%20Code-Plugin-blue" alt="Claude Code plugin" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT" /></a>
-  <a href="https://github.com/AgriciDaniel/claude-seo/releases"><img src="https://img.shields.io/github/v/release/AgriciDaniel/claude-seo" alt="Version" /></a>
   <a href="tests/"><img src="https://img.shields.io/badge/tests-1065%20passing-brightgreen" alt="Tests" /></a>
-  <a href="https://github.com/AgriciDaniel/claude-seo"><img src="https://img.shields.io/github/stars/AgriciDaniel/claude-seo?style=flat" alt="GitHub stars" /></a>
-  <a href="https://www.skool.com/ai-marketing-hub-pro"><img src="https://img.shields.io/badge/AI%20Marketing%20Hub-Pro%20community-purple" alt="AI Marketing Hub Pro community" /></a>
+  <a href="https://github.com/AgriciDaniel/claude-seo"><img src="https://img.shields.io/badge/upstream-Claude%20SEO-lightgrey" alt="Upstream project" /></a>
 </p>
 
-**Claude SEO is a free SEO plugin for Claude Code.** Give it any website and it runs a full SEO audit in 10 to 15 minutes, then hands you a clear action plan, sorted by what matters most.
+**Agy-SEO is an open-source SEO and GEO audit suite.** Give it a website and it runs a full audit in 10 to 15 minutes, then hands you a prioritized action plan. It runs as a Claude Code plugin and ships agent instructions for OpenCode, Codex, Cursor, Gemini CLI, Antigravity and other harnesses that read `AGENTS.md`.
 
 It checks everything a good SEO consultant would:
 
@@ -43,29 +38,40 @@ It checks everything a good SEO consultant would:
 - **AI search (GEO).** How likely Google AI Overviews, AI Mode, ChatGPT, Perplexity and Gemini are to cite your pages.
 - **Local and e-commerce SEO.** Google Business Profile, reviews, map pack, product pages and international sites.
 
-Claude SEO is built from 26 sub-skills and 19 specialist agents, and up to 17 agents work on your site at the same time. Every recommendation explains why it matters and how you will know it worked.
+Agy-SEO is built from 26 sub-skills and 19 specialist agents, and up to 17 agents work on your site at the same time. Every recommendation explains why it matters and how you will know it worked.
+
+## What this fork adds
+
+- **Multi-harness instructions.** `AGENTS.md` covers OpenCode, Codex, Cursor, Gemini CLI, Antigravity and other agent harnesses.
+- **Plan gate.** A read-only planning step before execution, in `extensions/plan-gate/`.
+- **Local playbooks.** B2B and dark-SEO material merged into the upstream skill set.
+- **Security hardening.** The fork tracks upstream v2.5.0 and adds local hardening on top.
+
+The 26-skill, 19-agent audit engine is upstream work by Agrici Daniel and contributors. See [Credits](#credits).
 
 ## See it in action
 
+The demo below is from the upstream project.
+
 Type `/seo` in Claude Code to see every command:
 
-![Claude SEO /seo command demo in the Claude Code terminal](screenshots/seo-command-demo.gif)
+![Agy-SEO /seo command demo in the Claude Code terminal](screenshots/seo-command-demo.gif)
 
 Run a full audit and watch the agents fan out across the site:
 
-![Claude SEO /seo audit demo: parallel agents producing a prioritized action plan](screenshots/seo-audit-demo.gif)
+![Agy-SEO /seo audit demo: parallel agents producing a prioritized action plan](screenshots/seo-audit-demo.gif)
 
 [Watch the full demo on YouTube](https://www.youtube.com/watch?v=COMnNlUakQk)
 
-## Real results
+## Upstream results
 
-The project's own site, [claude-seo.md](https://claude-seo.md), audited with Claude SEO from day one: 10.8K Search Console clicks in its first 12 weeks and a 99 mobile PageSpeed score.
+These results come from the original Claude SEO project, not from this fork. The project's own site, [claude-seo.md](https://claude-seo.md), audited with Claude SEO from day one: 10.8K Search Console clicks in its first 12 weeks and a 99 mobile PageSpeed score.
 
 <img src="assets/readme/screen.svg" width="1200" height="751" alt="Real results: Google Search Console showing 10.8K clicks and 324K impressions for a new site between 23 March and 12 June 2026, next to a PageSpeed Insights report scoring 99 for performance and 100 for SEO." />
 
 ## Meet the team
 
-<img src="assets/readme/v3/team.svg" width="1200" height="420" alt="The Claude SEO team: 19 specialist agents on a website, each standing on the part it checks, shown one at a time with its role, model, ability and command." />
+<img src="assets/readme/v3/team.svg" width="1200" height="420" alt="The Agy-SEO team: 19 specialist agents on a website, each standing on the part it checks, shown one at a time with its role, model, ability and command." />
 
 <details>
 <summary><b>All 19 agents</b></summary>
@@ -134,13 +140,13 @@ The project's own site, [claude-seo.md](https://claude-seo.md), audited with Cla
 
 ## Pricing
 
-<img src="assets/readme/v3/shop.svg" width="1200" height="420" alt="Same items, two shops: an agency charges for an SEO audit, reporting, calls and a retainer while Claude SEO charges nothing. Over year one the agency total reaches $106,500. Illustrative pricing." />
+<img src="assets/readme/v3/shop.svg" width="1200" height="420" alt="Same items, two shops: an agency charges for an SEO audit, reporting, calls and a retainer while Agy-SEO charges nothing. Over year one the agency total reaches $106,500. Illustrative pricing." />
 
 <details>
 <summary><b>The full comparison</b></summary>
 <br />
 
-| | Doing it by hand | Hiring an agency | SEO audit software | **Claude SEO** |
+| | Doing it by hand | Hiring an agency | SEO audit software | **Agy-SEO** |
 |---|---|---|---|---|
 | **Time per audit** | 4 to 8 hours | 1 to 3 weeks | 10 to 45 minutes | **10 to 15 minutes** |
 | **Cost** | Billable hours | $2k to $15k+ per project | $99 to $999 a month | **Free, with your Claude Code plan** |
@@ -156,7 +162,7 @@ The project's own site, [claude-seo.md](https://claude-seo.md), audited with Cla
 
 ## How an audit works
 
-1. **It learns your site.** Claude SEO detects the type of business (SaaS, local, e-commerce, publisher or agency) and adjusts its checks.
+1. **It learns your site.** Agy-SEO detects the type of business (SaaS, local, e-commerce, publisher or agency) and adjusts its checks.
 2. **The team fans out.** Up to 17 specialist agents audit the site in parallel: technical, content, schema, speed, AI search and more.
 3. **You get a plan, not a pile of warnings.** Findings are scored and sorted into a prioritized action plan. Each recommendation says what it is based on, what it depends on and how you will know it worked.
 
@@ -188,62 +194,19 @@ Want the details? Read the [methodology](skills/seo/references/thinking-framewor
 
 ## Install
 
-<img src="assets/readme/v3/install.svg" width="1200" height="420" alt="Installing Claude SEO: add the marketplace, install the plugin, 26 skills and 19 agents arrive, /seo setup readies the browser, then /seo audit starts the first level." />
-
 You need [Claude Code](https://claude.com/product/claude-code) 1.0.33 or newer. Run these three commands inside it:
 
 ```bash
-/plugin marketplace add AgriciDaniel/claude-seo
-/plugin install claude-seo@agricidaniel-claude-seo
+/plugin marketplace add MostaDaoud/Agy-SEO
+/plugin install claude-seo@agy-seo
 /seo setup
 ```
 
-`/seo setup` prepares everything Claude SEO needs (its own Python environment and a headless browser) without touching the rest of your system. Run `/seo doctor` any time to check it.
+`/seo setup` prepares everything Agy-SEO needs (its own Python environment and a headless browser) without touching the rest of your system. Run `/seo doctor` any time to check it.
 
-<details>
-<summary><b>Manual install: macOS and Linux</b></summary>
-<br />
+> **Plugin ID.** The plugin keeps the upstream ID `claude-seo` so existing commands and skill paths keep working. The marketplace is `agy-seo`.
 
-<img src="assets/readme/v3/plat-unix.svg" width="1200" height="260" alt="Manual install: macOS and Linux: the install typed out in a terminal" />
-
-```bash
-git clone --depth 1 https://github.com/AgriciDaniel/claude-seo.git
-bash claude-seo/install.sh
-```
-
-One-liner (curl, review then run):
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/AgriciDaniel/claude-seo/main/install.sh > install.sh
-cat install.sh        # review before running
-bash install.sh
-rm install.sh
-```
-
-</details>
-
-<details>
-<summary><b>Manual install: Windows (PowerShell)</b></summary>
-<br />
-
-<img src="assets/readme/v3/plat-win.svg" width="1200" height="260" alt="Manual install: Windows (PowerShell): the install typed out in a terminal" />
-
-```powershell
-git clone --depth 1 https://github.com/AgriciDaniel/claude-seo.git
-powershell -ExecutionPolicy Bypass -File claude-seo\install.ps1
-```
-
-> **Why `git clone` instead of `irm | iex`?** Claude Code's own security guardrails flag `irm ... | iex` as a supply chain risk: downloading and executing remote code without verification. The `git clone` approach lets you inspect `claude-seo\install.ps1` before running it.
-
-</details>
-
-> **Two versions.** This public version is MIT licensed and free for everyone. [AI Marketing Hub Pro](https://www.skool.com/ai-marketing-hub-pro) members also get a private version with early access to new features. Members install it with:
->
-> ```bash
-> /plugin marketplace add AI-Marketing-Hub/claude-seo
-> /plugin install claude-seo@ai-marketing-hub-claude-seo
-> /seo setup
-> ```
+**Other harnesses.** OpenCode, Codex, Cursor, Gemini CLI and Antigravity read `AGENTS.md`. Claude Code users can also read `CLAUDE.md`.
 
 **Your first audit:**
 
@@ -260,7 +223,7 @@ claude                                   # start Claude Code
 ## FAQ
 
 <details>
-<summary><b>What is Claude SEO?</b></summary>
+<summary><b>What is Agy-SEO?</b></summary>
 <br />
 
 A free, open-source SEO audit tool that runs inside Claude Code. It checks technical SEO, Core Web Vitals, content quality, Schema.org structured data, AI search readiness, local SEO, e-commerce and international SEO, then gives you a prioritized action plan. It follows Google's own documentation, including the [AI Optimization Guide](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide).
@@ -279,7 +242,7 @@ Yes. It is MIT licensed, with no per-site pricing, no usage limits and no tracki
 <summary><b>Do I need API keys?</b></summary>
 <br />
 
-No. Claude SEO works out of the box. If you want real field data, you can connect free Google APIs (PageSpeed Insights, Chrome UX Report, Search Console and Google Analytics 4) with `/seo google setup`. Your keys stay on your machine.
+No. Agy-SEO works out of the box. If you want real field data, you can connect free Google APIs (PageSpeed Insights, Chrome UX Report, Search Console and Google Analytics 4) with `/seo google setup`. Your keys stay on your machine.
 
 </details>
 
@@ -287,7 +250,7 @@ No. Claude SEO works out of the box. If you want real field data, you can connec
 <summary><b>How does it help with AI search like Google AI Overviews and ChatGPT?</b></summary>
 <br />
 
-Google says optimizing for AI search is still SEO, so Claude SEO starts with the basics that AI answers rely on: being indexed, fast and clear. Then `/seo geo` scores how easy your pages are to quote, checks that AI crawlers can reach them and looks at your brand's presence on Wikipedia, Reddit, YouTube and LinkedIn. `/seo agentic` checks how well AI agents can use your site.
+Google says optimizing for AI search is still SEO, so Agy-SEO starts with the basics that AI answers rely on: being indexed, fast and clear. Then `/seo geo` scores how easy your pages are to quote, checks that AI crawlers can reach them and looks at your brand's presence on Wikipedia, Reddit, YouTube and LinkedIn. `/seo agentic` checks how well AI agents can use your site.
 
 </details>
 
@@ -295,7 +258,7 @@ Google says optimizing for AI search is still SEO, so Claude SEO starts with the
 <summary><b>Does it work on JavaScript sites like Next.js, React or Vue?</b></summary>
 <br />
 
-Yes. When a page needs JavaScript to show its content, Claude SEO opens it in a headless browser automatically, so single-page apps are audited as visitors see them.
+Yes. When a page needs JavaScript to show its content, Agy-SEO opens it in a headless browser automatically, so single-page apps are audited as visitors see them.
 
 </details>
 
@@ -303,7 +266,7 @@ Yes. When a page needs JavaScript to show its content, Claude SEO opens it in a 
 <summary><b>How is it different from Screaming Frog or other SEO tools?</b></summary>
 <br />
 
-Crawlers like Screaming Frog crawl faster and deeper, and big SEO suites have their own backlink databases. Claude SEO does something else: it explains what it finds, sorts it by impact, covers AI search in depth and lets you ask follow-up questions in plain English. Many people use both.
+Crawlers like Screaming Frog crawl faster and deeper, and big SEO suites have their own backlink databases. Agy-SEO does something else: it explains what it finds, sorts it by impact, covers AI search in depth and lets you ask follow-up questions in plain English. Many people use both.
 
 </details>
 
@@ -311,7 +274,7 @@ Crawlers like Screaming Frog crawl faster and deeper, and big SEO suites have th
 <summary><b>Does my data leave my computer?</b></summary>
 <br />
 
-Claude SEO runs inside Claude Code, so the pages and data it analyzes are sent to Claude, Anthropic's model, the same as anything else you work on in Claude Code. Reports are saved as files on your machine. No SEO service or other third party sees your data unless you connect an extension or API yourself. Besides the site you audit, some checks read public sources such as Wikipedia, Reddit and Common Crawl. See [PRIVACY.md](PRIVACY.md) for the full list.
+Agy-SEO runs inside Claude Code, so the pages and data it analyzes are sent to Claude, Anthropic's model, the same as anything else you work on in Claude Code. Reports are saved as files on your machine. No SEO service or other third party sees your data unless you connect an extension or API yourself. Besides the site you audit, some checks read public sources such as Wikipedia, Reddit and Common Crawl. See [PRIVACY.md](PRIVACY.md) for the full list.
 
 </details>
 
@@ -325,18 +288,13 @@ Claude SEO runs inside Claude Code, so the pages and data it analyzes are sent t
 
 **Limits.** Without Google API keys, Core Web Vitals are lab estimates and indexing is inferred from the page. Pages that load key content only after scrolling or clicking can give noisy results.
 
-**Uninstall.** Installed as a plugin: `/plugin uninstall claude-seo@agricidaniel-claude-seo`. Installed manually:
-
-```bash
-git clone --depth 1 https://github.com/AgriciDaniel/claude-seo.git
-bash claude-seo/uninstall.sh
-```
+**Uninstall.** Installed as a plugin: `/plugin uninstall claude-seo@agy-seo`.
 
 </details>
 
 ## Extensions
 
-Optional add-ons that bring in more data. Claude SEO works fully without them.
+Optional add-ons that bring in more data. Agy-SEO works fully without them.
 
 - **Banana:** AI images for SEO, from social previews to blog heroes ([Claude Banana](https://github.com/AgriciDaniel/banana-claude))
 - **SE Ranking:** your share of voice in ChatGPT, Gemini, Perplexity and Google AI answers
@@ -346,7 +304,9 @@ Optional add-ons that bring in more data. Claude SEO works fully without them.
 
 Setup guides live in [`extensions/`](extensions/).
 
-## More from the same family
+## Related upstream projects
+
+These are separate projects by the original author, not part of Agy-SEO.
 
 | Project | What it does |
 |---|---|
@@ -362,15 +322,9 @@ Setup guides live in [`extensions/`](extensions/).
 
 MIT License, see [LICENSE](LICENSE). Contributions are welcome: read [CONTRIBUTING.md](CONTRIBUTING.md) first and mention the checks you ran in your pull request.
 
-## Author
+## Credits
 
-Built by **[Agrici Daniel](https://agricidaniel.com/about)**, AI Workflow Architect, with help from the [AI Marketing Hub Pro](https://www.skool.com/ai-marketing-hub-pro) community.
+Agy-SEO is maintained by **[Mostafa Daoud](https://github.com/MostaDaoud)**.
 
-<img src="assets/readme/v3/credits.svg" width="1200" height="420" alt="Thanks for playing: the three bots by a bonfire fed with search engine logos while the credits crawl into the stars." />
-
-<p align="center">
-  <a href="https://www.youtube.com/@AgriciDaniel"><img src="assets/readme/btn-youtube.svg" width="137" height="44" alt="Claude Code tutorials and demos on YouTube" /></a>
-  <a href="https://www.skool.com/ai-marketing-hub"><img src="assets/readme/btn-hub.svg" width="210" height="44" alt="AI Marketing Hub, the free community on Skool" /></a>
-  <a href="https://www.skool.com/ai-marketing-hub-pro"><img src="assets/readme/btn-pro.svg" width="155" height="44" alt="AI Marketing Hub Pro: early access to this skill" /></a>
-</p>
+It is a fork of **[Claude SEO](https://github.com/AgriciDaniel/claude-seo)**, built by **[Agrici Daniel](https://agricidaniel.com/about)** with the AI Marketing Hub Pro community. The upstream project is MIT licensed and remains the source of the 26-skill, 19-agent audit engine. The original copyright notice is preserved in [LICENSE](LICENSE).
 

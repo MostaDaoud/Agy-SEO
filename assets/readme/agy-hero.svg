@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">Agy-SEO</title>
+  <desc id="desc">SEO and GEO audits for Claude Code, OpenCode and Codex. 26 skills, 19 agents, MIT licensed.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#818CF8"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E293B" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="420" fill="url(#bg)"/>
+  <rect width="1200" height="420" fill="url(#grid)" opacity="0.55"/>
+  <rect x="0" y="0" width="8" height="420" fill="url(#accent)"/>
+
+  <text x="80" y="152" font-family="Segoe UI, Arial, sans-serif" font-size="92" font-weight="700" fill="#F8FAFC" letter-spacing="-2">Agy-SEO</text>
+  <text x="84" y="202" font-family="Segoe UI, Arial, sans-serif" font-size="25" fill="#94A3B8">SEO and GEO audits for Claude Code, OpenCode and Codex</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#BAE6FD">
+    <rect x="84" y="238" width="104" height="36" rx="18" fill="#0F172A" stroke="#1E40AF"/>
+    <text x="103" y="262">26 skills</text>
+    <rect x="200" y="238" width="110" height="36" rx="18" fill="#0F172A" stroke="#1E40AF"/>
+    <text x="219" y="262">19 agents</text>
+    <rect x="322" y="238" width="76" height="36" rx="18" fill="#0F172A" stroke="#1E40AF"/>
+    <text x="344" y="262">MIT</text>
+  </g>
+
+  <g stroke="#334155" stroke-width="1.5">
+    <line x1="930" y1="210" x2="930" y2="96"/>
+    <line x1="930" y1="210" x2="1042" y2="158"/>
+    <line x1="930" y1="210" x2="1024" y2="286"/>
+    <line x1="930" y1="210" x2="836" y2="300"/>
+    <line x1="930" y1="210" x2="816" y2="146"/>
+  </g>
+  <circle cx="930" cy="210" r="122" fill="none" stroke="#1E3A8A" stroke-width="1.5" stroke-dasharray="6 8"/>
+  <circle cx="930" cy="210" r="82" fill="none" stroke="#1E293B" stroke-width="1.5"/>
+  <circle cx="930" cy="210" r="46" fill="#0F172A" stroke="url(#accent)" stroke-width="2.5"/>
+  <text x="930" y="218" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#F8FAFC">SEO</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#CBD5E1">
+    <circle cx="930" cy="96" r="7" fill="#38BDF8"/>
+    <text x="946" y="101">GEO</text>
+    <circle cx="1042" cy="158" r="7" fill="#38BDF8"/>
+    <text x="1058" y="163">Schema</text>
+    <circle cx="1024" cy="286" r="7" fill="#38BDF8"/>
+    <text x="1040" y="291">CWV</text>
+    <circle cx="836" cy="300" r="7" fill="#38BDF8"/>
+    <text x="760" y="305">Local</text>
+    <circle cx="816" cy="146" r="7" fill="#38BDF8"/>
+    <text x="742" y="151">Links</text>
+  </g>
+
+  <text x="84" y="368" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#64748B">Forked from Claude SEO by Agrici Daniel. Maintained by Mostafa Daoud. MIT licensed.</text>
+</svg>

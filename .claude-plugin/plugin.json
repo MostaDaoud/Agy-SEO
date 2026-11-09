@@ -1,14 +1,14 @@
 {
   "name": "claude-seo",
   "version": "2.5.0",
-  "description": "Comprehensive SEO analysis plugin for Claude Code. 26 sub-skills (22 core + 1 orchestrator + 1 framework + 2 extension mirrors) and 19 sub-agents cover technical SEO, content quality, schema, sitemaps, Core Web Vitals, local SEO, backlinks, AI/GEO, ecommerce, hreflang, SXO, clustering, drift monitoring, and Google APIs. Includes optional MCP extensions, SPA-aware rendering, portability, and hardened SSRF/DNS-rebinding safe fetchers.",
+  "description": "SEO and GEO audit plugin for Claude Code, OpenCode and Codex. Agy-SEO fork maintained by Mostafa Daoud, based on Claude SEO by Agrici Daniel. 26 sub-skills (22 core + 1 orchestrator + 1 framework + 2 extension mirrors) and 19 sub-agents cover technical SEO, content, schema, sitemaps, Core Web Vitals, local, backlinks, AI search, ecommerce, hreflang, SXO, clustering, drift and Google APIs. Includes MCP extensions and SPA rendering.",
   "author": {
-    "name": "AgriciDaniel",
-    "url": "https://github.com/AgriciDaniel"
+    "name": "Mostafa Daoud",
+    "url": "https://github.com/MostaDaoud"
   },
   "license": "MIT",
-  "homepage": "https://claude-seo.md",
-  "repository": "https://github.com/AgriciDaniel/claude-seo",
+  "homepage": "https://github.com/MostaDaoud/Agy-SEO",
+  "repository": "https://github.com/MostaDaoud/Agy-SEO",
   "keywords": [
     "seo",
     "technical-seo",
