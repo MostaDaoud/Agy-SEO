@@ -63,8 +63,18 @@ def _lock(handle, exclusive):
     elif msvcrt is not None:
         # msvcrt has no shared mode, so readers take an exclusive lock too.
         # LK_LOCK retries 10 times at 1s intervals, then raises OSError.
-        handle.seek(0)
-        msvcrt.locking(handle.fileno(), msvcrt.LK_LOCK, 1)
+        # Under high multi-process concurrency on Windows, retry on EDEADLK/EACCES.
+        import errno, time
+        for attempt in range(50):
+            try:
+                handle.seek(0)
+                msvcrt.locking(handle.fileno(), msvcrt.LK_LOCK, 1)
+                break
+            except OSError as exc:
+                if exc.errno in (getattr(errno, 'EDEADLK', 36), getattr(errno, 'EACCES', 13)) and attempt < 49:
+                    time.sleep(0.05 + 0.01 * attempt)
+                else:
+                    raise
     else:
         raise LedgerError(
             "No file-locking primitive available (neither fcntl nor msvcrt). "
