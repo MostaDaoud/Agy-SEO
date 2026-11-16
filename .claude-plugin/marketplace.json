@@ -5,13 +5,13 @@
     "name": "MostaDaoud"
   },
   "metadata": {
-    "description": "SEO and GEO audit plugin for Claude Code, OpenCode and Codex. Agy-SEO fork maintained by Mostafa Daoud, based on Claude SEO by Agrici Daniel. 26 sub-skills and 19 sub-agents, plus optional MCP extensions for live data."
+    "description": "SEO and GEO audit plugin for Claude Code, OpenCode and Codex. Agy-SEO fork maintained by Mostafa Daoud, based on Claude SEO by Agrici Daniel. 29 sub-skills and 20 sub-agents, plus optional MCP extensions for live data. v2.6.2 adds the Shopify and PostHog extensions, a trusted local proxy opt-in and 36 community pull requests."
   },
   "plugins": [
     {
       "name": "claude-seo",
       "source": "./",
-      "description": "SEO and GEO audit plugin for Claude Code, OpenCode and Codex. Agy-SEO fork maintained by Mostafa Daoud, based on Claude SEO by Agrici Daniel. 26 sub-skills and 19 sub-agents, plus optional MCP extensions.",
+      "description": "SEO and GEO audit plugin for Claude Code, OpenCode and Codex. Agy-SEO fork maintained by Mostafa Daoud, based on Claude SEO by Agrici Daniel. 29 sub-skills and 20 sub-agents, plus optional MCP extensions. v2.6.2 adds the Shopify and PostHog extensions, a trusted local proxy opt-in and 36 community pull requests.",
       "author": {
         "name": "Mostafa Daoud",
         "url": "https://github.com/MostaDaoud"
